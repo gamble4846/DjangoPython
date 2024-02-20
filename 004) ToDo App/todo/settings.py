@@ -37,11 +37,23 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'corsheaders'
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = [
+    "127.0.0.1", 
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1", 
+]
+CORS_ALLOW_CREDENTIALS = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
