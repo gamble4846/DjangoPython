@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -75,11 +76,11 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ToDoApp',
-        'USER': 'sa',
+        'NAME': 'todoapp',
+        'USER': 'root',
         'PASSWORD': '18158114@Leo',
         'HOST': 'wolfyvault.rohanpatel.site',  # or the hostname where your MySQL server is running
-        'PORT': '1433',      # or the port on which your MySQL server is listening
+        'PORT': '3306',      # or the port on which your MySQL server is listening
     }
 }
 
